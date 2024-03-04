@@ -7,21 +7,10 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias ex="exit"
-alias v="vim"
-alias locate="plocate"
-color_prompt=yes
-if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\
-[\[\033[01;92m\]\u\
-\[\033[01;31m\]  ~ \
-\[\033[01;94m\]\h\
-\[\033[01;00m\]:\
-\[\033[01;33m\]\w\
-\[\033[00m\]]\$ '
-else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-fi
-
-
-
+alias locate='plocate'
+PS1='[\u@\h \W]\$ '
+eval "$(starship init bash)"
+# duf
+colorscript -r
+# toilet BlackNigger
+# python3 "om"
