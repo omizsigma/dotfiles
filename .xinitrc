@@ -47,7 +47,6 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  done
  unset f
 fi
-5e3787
 # Keyboard
 setxkbmap us &
 
